@@ -1,0 +1,6 @@
+Sử dụng cấu trúc cây để tổ chức đối tượng.
+-Component là lớp trừu tượng định nghĩa các phương thức chung mà leaf và composite phải tuân theo 
+-Leaf là đối tượng đơn lẻ, ko chứa con
+-Composite là nhóm đối tượng, đại dienej cho các thành phần, có thể chứa leaf hoặc composte khác 
+-Client, sử dụng component mà ko cần quan tâm đó là leaf hay composite
+Nói chung cái này là sử dụng đệ quy như trong cây.

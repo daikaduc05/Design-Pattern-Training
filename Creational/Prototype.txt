@@ -1,0 +1,6 @@
+Đơn giản chỉ là copy constructor như trong c++
+Sử dụng khi không quan tâm đến lớp/trường cụ thể mà đối tượng cần copy, chỉ đơn giản là copy mà ko quan tâm gì nhiều
+Tức là thêm 1 phương thức clone vô các lớp
+Có 2 loại copy:
++deepcopy: copy sâu, copy hết toàn bộ các con / cha của thuộc tính đối tượng
++copy shallow, chỉ copy thằng cha, nếu thay đổi 1 thằng con thì thằng con sẽ thay đổi theo, reference vô thằng cha

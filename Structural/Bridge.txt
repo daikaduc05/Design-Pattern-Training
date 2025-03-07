@@ -1,0 +1,5 @@
+Giải quyết vấn đề tổ hợp mấy cái lớp phụ thuộc lại thì quá nhiều.
+Abstraction sẽ được cài và truyền các implementation vào như param, để khỏi tổ hợp các class cụ thể 
+quá nhiều, thêm thành viên mới vào abstract sẽ ko ảnh hưởng tới thằng implementation, và ngược lại.
+Tạo sự riêng biệt cho mấy thành phần đó.
+Nói 1 cách khác là chia 1 lớp đơn thành nhiều lớp phân cấp trong đó và thay đổi chúng 1 cách độc lập

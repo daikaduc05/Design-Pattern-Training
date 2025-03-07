@@ -1,0 +1,15 @@
+GUIFactory(Abstract): 1 lớp trừu tượng cho các factory sau này
+
+Các Factory được kế thừa từ lớp GUIFactory trừu tượng, custom 1 loại gia đình cụ thể cho 1 factory đại diện
+
+Concrete Factory triển khai Abstract Factory để tạo ra các phiên bản cụ thể của các đối tượng, Concrete Factory giúp ẩn 
+quá trình khởi tạo để tạo và làm cho code linh hoạt hơn, vì chương trình chỉ cần làm việc với giao diện trừu tượng.
+
+Application chỉ cần truyền loại Factory vào mà ko cần thay đổi code ở nhiều nơi,khi sử dụng Application
+không cần quan tâm đến loại đối tượng cụ thể.
+
+
+Khi 1 loại mới được define, chỉ cần viết 1 factory mới là đủ mà ko cần tìm khắp nơi trong code và thêm if vào ...
+ 
+---------> Dùng khi 1 gia đình đối tượng nhưng có nhiều loại khác nhau ví dụ đồ gia dụng bình dân, đồ gia dụng hoàng gia ,....
+

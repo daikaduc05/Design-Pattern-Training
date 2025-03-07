@@ -1,0 +1,8 @@
+Đúng như cái tên của nó, adapter dùng để xử lý khi sử dụng 1 hệ thống mới có dùng lại 1 vài thứ thuộc hệ 
+thống cũ mà giao diện của nó bị conflict.
+
+có 2 loại adapter pattern, 
++object adapter : sử dụng kết hợp đối tượng, nghĩa là nó ko kế thừa đối tượng cũ mà nó sử dụng đối tượng cũ
++class adapter : kế thừa đối tượng cũ và implement interface mới
+
+newmethod sẽ kiểu biên dịch lại oldmethod cho nó phù hợp với giao diện mới

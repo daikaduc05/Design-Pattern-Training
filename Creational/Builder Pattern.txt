@@ -1,0 +1,15 @@
+Builder Pattern:
+
+Product (sản phẩm)
+
+Builder (Abstract) : Define cái khung cho mấy thằng builder.
+
+Concrete Builder : Builder cụ thể được xây dựng từ Builder (Abstract) được tạo
+thành với mục đích xây dựng chính xác 1 loại product nào đó (Tức là nếu tồn tại thằng 2 builder xây nhà với
+các vật liệu như gỗ và thủy tinh, 1 thằng builder xây dựng nhà bằng vật liệu sắt và đá. Thì cũng với cùng
+chung 1 set method thì thằng thứ 1 sẽ xây được 1 ngôi nhà gỗ, thằng thứ 2 xây ra được 1 lâu đài, ...).
+
+Director : Quản lý mấy thằng concrete builder, có thể chọn loại concrete builder
+rồi bắt hắn làm theo step do mình tự custom (không bắt buộc).
+
+-----> Dùng khi đối tượng phức tạp, cần trải qua nhiều bước làm mà ko cần truyền nhiều param vào constructor

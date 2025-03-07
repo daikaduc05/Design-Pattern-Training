@@ -1,0 +1,7 @@
+Kiến trúc tương tự như strategy,
+command : abstract 
+concrete command : kết thừa từ command 
+invoker : lớp yêu cầu thực hiện lệnh
+receiver : lớp chứa các method business logic
+
+-> chuyển đổi các method thành các object, đóng gói chúng lại để sau ni mà sử dụng 

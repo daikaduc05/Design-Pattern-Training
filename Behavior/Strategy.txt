@@ -1,0 +1,5 @@
+Nói chung là abstract class thôi
+1 giao diện strategy
+các concrete strategies
+1 cái context truyền concrete strategies vào.
+thay đổi thuật toán trong thời gian runtime

@@ -1,0 +1,2 @@
+Tạo 1 class Factory chỉ phụ trách việc create. Đầu tiên, tạo 1 lớp trừu tượng, r triển khai
+các lớp factory cụ thể để create 1 thằng nào đó

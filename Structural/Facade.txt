@@ -1,0 +1,1 @@
+Nói chung nó chỉ là 1 cái class giao diện chung, kiểu tổng hợp các method từ class khác lại để dùng cho 1 mục đích chính

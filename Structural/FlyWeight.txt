@@ -1,0 +1,3 @@
+Tạo 1 cái factory list, kiểu bình thường sẽ có thể có nhiều cái object có cùng loại trùng nhau làm tốn bộ nhớ.
+factory list này sẽ cho mình check xem cái object truyền vào factory đó đã tồn tại chưa, chỉ dùng 1 instance 
+tránh lặp lại nhiều instance có cùng giá trị.

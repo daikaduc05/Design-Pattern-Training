@@ -1,0 +1,3 @@
+có 2 đối tượng chính :
++Subcriber:đăng ký publisher
++Publisher:Sẽ mở ra cho các thằng đăng ký làm subcriber, sau đó có event gì mà subcriber muốn nhận được thì publisher sẽ gửi đến nó

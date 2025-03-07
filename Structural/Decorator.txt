@@ -1,0 +1,4 @@
+Mục đích : Giúp mở rộng - kết hợp mấy lớp con cơ bản mà ko cần tạo quá nhiều lớp con tổ hợp,
+sử dụng bao bộc các lớp để mở rộng.
+Flow kiểu : 
+Một người ko có áo ấm -> mặc áo ấm -> mặc áo mưa - ....
