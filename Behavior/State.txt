@@ -1,0 +1,5 @@
+thay đổi hành vi trạng thái của đối tượng mà k cần dùng if phiền phức.
+cấu trúc:
++context : tham chiếu đến đối tượng có các state cụ thể
++state interface : giao diện state 
++state concrete : state xác định cụ thể
