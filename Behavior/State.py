@@ -7,7 +7,7 @@ class State(ABC):
 class Receive(State):
     def handle(self,task):
         task.state = Process()
-        return 'Task is received, next state is Process'
+        return 'Task is received, next state are Process'
 
 class Process(State):
     def handle(self,task):
