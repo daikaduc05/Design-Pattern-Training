@@ -1,45 +1,40 @@
-from abc import ABC
-class MainIngredient(ABC):
-    pass
+from abc import ABC, abstractmethod
 
-class ExtraIngredient(ABC):
-    pass
+class Ingredient(ABC):
+    @abstractmethod
+    def prepare_ingredient(self):
+        pass
 
-class Cacao(MainIngredient):
-    def __str__(self):
-        return 'Cacao'
-class Coffe(MainIngredient):
-    def __str__(self):
-        return 'Coffe'
+class CoffeeIngredient(Ingredient):
+    def prepare_ingredient(self):
+        print("Chuẩn bị nguyên liệu cà phê")
 
-class Milk(ExtraIngredient):
-    def __str__(self):
-        return 'Milk'
-class Cream(ExtraIngredient):
-    def __str__(self):
-        return 'Cream'
-class Salt(ExtraIngredient):
-    def __str__(self):
-        return 'Salt'
-    
-class Bartender(): #this is bridge class
-    def __init__(self,extra_ingredient,main_ingredient):
-        self.main_ingredient = main_ingredient
-        self.extra_ingredient = extra_ingredient
-    def __str__(self):
-        extra_names = ', '.join(str(x) for x in self.extra_ingredient)  # Chuyển object thành string
-        return f'{self.main_ingredient} with {extra_names}'
-    
+class CacaoIngredient(Ingredient):
+    def prepare_ingredient(self):
+        print("Chuẩn bị nguyên liệu ca-cao")
 
-cacao = Cacao()
-milk = Milk()
-coffe = Coffe()
-cream = Cream()
-salt = Salt()
+class Drink(ABC):
+    def __init__(self, ingredient: Ingredient):
+        self.ingredient = ingredient
 
+    @abstractmethod
+    def serve(self):
+        pass
 
-milk_coffe = Bartender([milk,salt],coffe)
-cacao_salt = Bartender([salt],cacao)
+class IcedDrink(Drink):
+    def serve(self):
+        print("Pha đồ uống kiểu đá (Iced).")
+        self.ingredient.prepare_ingredient()
 
-print(cacao_salt)
-print(milk_coffe)
+class HotDrink(Drink):
+    def serve(self):
+        print("Pha đồ uống kiểu nóng (Hot).")
+        self.ingredient.prepare_ingredient()
+
+iced_coffee = IcedDrink(CoffeeIngredient())
+iced_coffee.serve()
+
+print()
+
+hot_cacao = HotDrink(CacaoIngredient())
+hot_cacao.serve()

@@ -1,4 +1,4 @@
-Nói tóm lại nó là lớp trung gian quản lý quyền truy cập.
+Nói tóm lại nó là lớp trung gian đại diện cho lớp thật quản lý quyền truy cập.
 Áp dụng : 
 +Lazy loading  : tạo khi cần
 +Auth protect : bảo vệ quyền 

@@ -5,13 +5,13 @@ class AsiaCharger(Charger):
     def __init__(self,name):
         self.name = name
     def charge_with_two_pin(self):
-        print("Charging with two pins")
+        print("Charging success with two pins")
 
 class EuropeCharger(Charger):
     def __init__(self,name):
         self.name = name
     def charge_with_three_pin(self):
-        print("Charging with three pins") 
+        print("Charging success with three pins") 
 
 
 
